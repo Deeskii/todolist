@@ -24,8 +24,8 @@
 %>
 <header>WEB UI TO-DO LIST APPLICATION</header>
 <nav>
-    <a href="showList.jsp" id="selected">Show To-Do List</a>
-    <a href="addItem.jsp">Add To-Do Item</a>
+    <a href="todoList.jsp" id="selected">Show To-Do List</a>
+    <a href="todoForm.jsp">Add To-Do Item</a>
     <a href="deleteItem.jsp">Delete To-Do Item</a>
 </nav>
 <section>
