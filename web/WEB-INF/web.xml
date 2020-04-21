@@ -3,4 +3,57 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+
+    <servlet>
+        <servlet-name>create</servlet-name>
+        <servlet-class>servlets.create</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>fake</servlet-name>
+        <servlet-class>servlets.ServletFake</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>showList</servlet-name>
+        <servlet-class>servlets.showList</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>todoCreateServlet</servlet-name>
+        <servlet-class>servlets.TodoCreateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>todoDeleteServlet</servlet-name>
+        <servlet-class>servlets.TodoDeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>todoListServlet</servlet-name>
+        <servlet-class>servlets.TodoListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>create</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>fake</servlet-name>
+        <url-pattern>/fake</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>showList</servlet-name>
+        <url-pattern>/showList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>todoCreateServlet</servlet-name>
+        <url-pattern>/TodoCreateServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>todoDeleteServlet</servlet-name>
+        <url-pattern>/TodoDeleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>todoListServlet</servlet-name>
+        <url-pattern>/TodoListServlet</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
