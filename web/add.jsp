@@ -1,7 +1,7 @@
 <%@ page import="model.Todo" %>
-<%@ page import="servlets.Swiderski_ManageToDoList" %>
+<%@ page import="servlets.ManageToDoList" %>
 <%
-    servlets.Swiderski_ManageToDoList MTDL = new servlets.Swiderski_ManageToDoList();
+    ManageToDoList MTDL = new ManageToDoList();
 
     String itemID = request.getParameter("item_identifier");
     String itemDesc = request.getParameter("item_desc");

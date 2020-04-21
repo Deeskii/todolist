@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="design.css">
     <%@ page import="model.Todo" %>
-    <%@ page import="servlets.Swiderski_ManageToDoList" %>
+    <%@ page import="servlets.ManageToDoList" %>
 </head>
 <body>
 <%
-    servlets.Swiderski_ManageToDoList MTDL = new servlets.Swiderski_ManageToDoList();
+    ManageToDoList MTDL = new ManageToDoList();
 %>
 <header>WEB UI TO-DO LIST APPLICATION</header>
 <nav>
-    <a href="showList.jsp">Show To-Do List</a>
+    <a href="todoList.jsp">Show To-Do List</a>
     <a href="addItem.jsp" id="selected">Add To-Do Item</a>
     <a href="deleteItem.jsp">Delete To-Do Item</a>
 </nav>

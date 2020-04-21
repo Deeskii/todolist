@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="design.css">
     <%@ page import="model.Todo" %>
-    <%@ page import="servlets.Swiderski_ManageToDoList" %>
+    <%@ page import="servlets.ManageToDoList" %>
 </head>
 <body>
 <%
-    servlets.Swiderski_ManageToDoList MTDL = new servlets.Swiderski_ManageToDoList();
+    ManageToDoList MTDL = new ManageToDoList();
 %>
 <header>WEB UI TO-DO LIST APPLICATION</header>
 <nav>

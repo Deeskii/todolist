@@ -1,13 +1,20 @@
 package servlets;
 
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import org.apache.tomcat.util.http.parser.MediaType;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.SQLException;
 
-public class Swiderski_ManageToDoList
+
+public class ManageToDoList
 {
     private static final String m_URL = "jdbc:mysql://localhost:3306/";
     private static final String m_DBNAME = "to_do_list";
@@ -21,7 +28,8 @@ public class Swiderski_ManageToDoList
     private static final String m_DELETE_SQL = "DELETE FROM to_do_list.to_dos WHERE id = ";
     private static final String m_UPDATE_SQL = "UPDATE to_do_list.to_dos SET ITEM_DESC = ";
 
-    public Swiderski_ManageToDoList() throws SQLException, ClassNotFoundException {
+
+    public ManageToDoList() throws SQLException, ClassNotFoundException {
         Class.forName(m_DRIVER);
         m_conn = DriverManager.getConnection(m_URL + m_DBNAME, m_USERNAME, m_PASSWORD);
     }

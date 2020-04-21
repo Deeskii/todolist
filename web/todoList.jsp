@@ -5,22 +5,22 @@
 
 <html>
 
-<head><style> .center {
-            max-width: 500px;
-            margin: auto;
-        }</style>
+<head>
+    <style> .center {
+        max-width: 500px;
+        margin: auto;
+    }</style>
     <title>todo list</title>
     <meta http-equiv="Content-Type" content="text/html" , charset="UTF-8">
     <title>Show To-Do List</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="design.css">
-    <%@ page import="model.Todo" %>
-    <%@ page import="servlets.Swiderski_ManageToDoList" %>
+    <%@ page import="servlets.ManageToDoList" %>
 </head>
 
 <body>
 <%
-    servlets.Swiderski_ManageToDoList MTDL = new servlets.Swiderski_ManageToDoList();
+    ManageToDoList MTDL = new ManageToDoList();
 %>
 <header>WEB UI TO-DO LIST APPLICATION</header>
 <nav>
