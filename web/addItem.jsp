@@ -11,14 +11,14 @@
 <%
     ManageToDoList MTDL = new ManageToDoList();
 %>
-<header>WEB UI TO-DO LIST APPLICATION</header>
+<header>TO-DO LIST APP </header>
 <nav>
-    <a href="showList.jsp">Show To-Do List</a>
+    <a href="todoList.jsp">Show To-Do List</a>
     <a href="addItem.jsp" id="selected">Add To-Do Item</a>
     <a href="deleteItem.jsp">Delete To-Do Item</a>
 </nav>
 <section>
-    <h2>Add To-Do Item</h2>
+    <h2>Add Task</h2>
     <div id="form_container">
         <form name="addItemForm" id="itemAddForm" method="post" action="create.jsp">
             <label for="item_id">ID for Item: </label>

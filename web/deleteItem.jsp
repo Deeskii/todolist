@@ -18,7 +18,7 @@
     <a href="deleteItem.jsp" id="selected">Delete To-Do Item</a>
 </nav>
 <section>
-    <h2>Delete To-Do Item</h2>
+    <h2>Delete a Task</h2>
     <form name="deleteItemForm" id="itemDeleteForm" method="post" action="delete.jsp">
         <label for="item_id">ID for Item: </label>
         <input type="text" name="item_identifier" id="item_id"><br>

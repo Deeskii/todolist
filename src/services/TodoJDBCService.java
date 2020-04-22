@@ -12,6 +12,9 @@ import java.util.*;
 
 import model.Todo;
 
+import javax.persistence.PersistenceContext;
+
+
 public class TodoJDBCService {
 
     // create singleton
